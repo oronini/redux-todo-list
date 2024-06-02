@@ -1,0 +1,18 @@
+.root {
+  .app_bar {
+    box-shadow: none;
+    background-color: #c0e1ff;
+    color: #282828;
+
+    .tool_bar {
+      padding: 0;
+
+      .title {
+        font-size: 3.2rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid #333;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

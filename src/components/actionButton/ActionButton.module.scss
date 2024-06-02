@@ -1,0 +1,58 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-inline: 15px;
+
+  .checkBoxWrap {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      cursor: pointer;
+
+      p {
+        font-size: 1.3rem;
+        user-select: none;
+      }
+      input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-top: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .checkAllDeleteButton,
+  .checkAllCompletedButton,
+  .completedAllDeleteButton {
+    background-color: #fff;
+    color: #000;
+    font-size: 1.6rem;
+    width: 30%;
+    padding: 13px;
+    line-height: 1.3;
+    word-break: keep-all;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 843px) {
+    .checkAllDeleteButton,
+    .checkAllCompletedButton,
+    .completedAllDeleteButton {
+      height: 61.5938px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .checkAllDeleteButton,
+    .checkAllCompletedButton,
+    .completedAllDeleteButton {
+      height: 53.2656px;
+    }
+  }
+}

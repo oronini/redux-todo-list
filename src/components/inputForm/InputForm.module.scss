@@ -1,0 +1,70 @@
+.root {
+  margin-top: 20px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    .text_field {
+      width: 70%;
+    }
+
+    .modal_text_field {
+      width: 50vw;
+    }
+
+    .text_field,
+    .modal_text_field {
+      div {
+        background-color: transparent;
+      }
+
+      label,
+      input {
+        font-size: 2rem;
+      }
+
+      input {
+        background-color: #fff;
+        border-radius: 4px 4px 0 0;
+      }
+    }
+
+    .buttonArea {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+
+      .submitButton,
+      .cancelButton {
+        font-size: 1.6rem;
+        width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .text_field {
+        width: 100%;
+      }
+
+      .modal_text_field {
+        width: 75vw;
+      }
+
+      .buttonArea {
+        flex-direction: column;
+        justify-content: center;
+        margin-inline: auto;
+
+        .submitButton,
+        .cancelButton {
+          width: 75vw;
+        }
+
+        .cancelButton {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

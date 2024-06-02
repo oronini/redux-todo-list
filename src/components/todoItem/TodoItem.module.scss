@@ -1,0 +1,107 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 3px 4px #838383;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+
+  .todo {
+    display: flex;
+    align-items: center;
+
+    label {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.4);
+      cursor: pointer;
+    }
+
+    svg {
+      margin-left: 10px;
+      font-size: 2rem;
+    }
+
+    .todo_text {
+      margin-left: 10px;
+    }
+  }
+
+  .button_group {
+    button {
+      padding-inline: 10px;
+      min-width: 30px;
+      color: #333;
+      background-color: #a9deff;
+      border-color: #6fb4df;
+
+      &:hover {
+        background-color: #1565c0;
+        color: #fff;
+      }
+
+      svg {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .root {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .todo {
+      svg {
+        font-size: 3rem;
+      }
+
+      .todo_text {
+        font-size: 2.2rem;
+      }
+    }
+
+    .button_group {
+      margin-top: 15px;
+      width: 100%;
+      button {
+        min-width: 33.3%;
+      }
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+
+  .modal_content {
+    background: #c0e1ff;
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    .modal_title {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .modal_content {
+      width: 85vw;
+    }
+  }
+}
